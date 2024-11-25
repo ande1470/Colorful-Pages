@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Styling</title>
+    <style>
+        /* Basic styles to make the layout more visible */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            height: 200px;
+            margin: 20px;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Flex container -->
+    <div id="flex-container" class="container">
+        <!-- Flex items -->
+        <div class="item" id="item1">Item 1</div>
+        <div class="item" id="item2">Item 2</div>
+        <div class="item" id="item3">Item 3</div>
+    </div>
+
+    <script>
+        // Accessing the flex container and items by their IDs
+        const flexContainer = document.querySelector("#flex-container");
+        const item1 = document.querySelector("#item1");
+        const item2 = document.querySelector("#item2");
+        const item3 = document.querySelector("#item3");
+
+        // Modifying the styles of the flex container
+        flexContainer.style.backgroundColor = "lightblue";  // Set background color
+        flexContainer.style.border = "5px solid black";     // Set border style
+        flexContainer.style.borderRadius = "10px";          // Add border radius for rounded corners
+
+        // Modifying the styles of item1
+        item1.style.backgroundColor = "tomato";  // Set background color
+        item1.style.border = "2px solid white";  // Set border style
+        item1.style.color = "white";             // Text color
+        item1.style.fontWeight = "bold";         // Text styling
+
+        // Modifying the styles of item2
+        item2.style.backgroundColor = "mediumseagreen";  // Set background color
+        item2.style.border = "2px solid white";         // Set border style
+        item2.style.color = "white";                    // Text color
+        item2.style.fontStyle = "italic";               // Text styling
+
+        // Modifying the styles of item3
+        item3.style.backgroundColor = "gold";  // Set background color
+        item3.style.border = "2px solid white";  // Set border style
+        item3.style.color = "black";             // Text color
+        item3.style.textTransform = "uppercase"; // Text styling
+    </script>
+
+</body>
+</html>
